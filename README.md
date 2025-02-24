@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aplicação de Indicações para Eventos Online
 
-## Getting Started
+Esta aplicação permite aos usuários visualizar e receber recomendações de eventos online. Desenvolvida durante o evento **"NLW Connect: Trilha React"** da **Rocketseat**, a aplicação faz uso dos principais fundamentos do **React** e **Next.js**, e implementa boas práticas como a composição de componentes, roteamento com App Router e a utilização de Server e Client Components.
 
-First, run the development server:
+## Páginas e Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Página de Inscrição**:
+   - Descreve o evento e disponibiliza um formulário que redireciona para a página de convites após realizar a inscrição.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ![image](https://github.com/user-attachments/assets/324b196a-3ea9-4989-ad3d-0c3fefd481e9)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Página de convite**:
+   - Disponibiliza um link para o usuário convidar pessoas para o evento.
+   - Contabiliza quantas pessoas acessaram e se inscreveram pelo link de convite do usuário.
+   - Lista um ranking de pessoas com mais indicações.
 
-## Learn More
+   ![image](https://github.com/user-attachments/assets/412733d4-1d66-4ea0-a5ba-abeea481c652)
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js, React, Tailwind CSS, TypeScript
+- **Ferramentas**: React Hook Form, Zod, Orval (para cliente HTTP)
+- **Arquitetura**: App Router, Server Components, Client Components
+- **Configuração de Toolchain**: Biome
